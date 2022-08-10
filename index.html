@@ -21,10 +21,13 @@
 		<li class="nav-item"> 
 			<a class="nav-link " data-value="portfolio" href="#">Portfolio</a> </li>
 		<li class="nav-item">  
-			<a class="nav-link "data-value="blog" href="#">Blog</a> </li><li class="nav-item"> 
+			<a class="nav-link "data-value="blog" href="#">Blog</a> </li>
+		<li class="nav-item"> 
 			<a class="nav-link " data-value="team" href="#">Team</a> </li>
 		<li class="nav-item">  
 			<a class="nav-link " data-value="contact-form" href="#">Contact</a> </li>
+		<li class="nav-item">  
+			<a class="nav-link " data-value="random" href="#">Random</a> </li>
 		</ul>
 	</div>
 	</nav>
@@ -49,7 +52,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <div class="row">
 <div class="col-lg-4 col-md-4 col-sm-12">
-<img align="center" src="img/team-3.jpg" class="img-fluid">
+<img align="center" src="img/team-32.jpg" class="img-fluid">
 <span class="text-justify">S.Web Developer</span>
 </div>
 <div class="col-lg-8 col-md-8 col-sm-12 desc">
@@ -214,6 +217,7 @@ name="email">
 <textarea class="form-control form-control-lg">
 </textarea>
 </div>
+<div class="form-group">
 <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
 </div>
 </div>
@@ -222,8 +226,29 @@ name="email">
 </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div class="random" id="random">
+<div class="container">
+<form>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-12">
+<h1>Генератор випадкових значень</h1>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12 right">
+<div class="form-group">
+<input type="text" class="form-control form-control-lg" placeholder="True Random Number Generator" name="">
+<input type="number" id="mi" class="form-control form-control-lg" placeholder="min number" name="min" value="1">
+<input type="number" id="ma" class="form-control form-control-lg" placeholder="max number" name="max" value="100">
+<input type="button" class="btn btn-secondary btn-block" value="Generate" 
+ onclick = "document.querySelector('.result').innerText = Math.floor(1.0*document.querySelector('#mi').value + Math.random() * (document.querySelector('#ma').value-document.querySelector('#mi').value + 1))">
+<input type="text" class="form-control form-control-lg" placeholder="Result:" name="">
 
+<div class="result"></div>
+</div>
+</form>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" ></script>
